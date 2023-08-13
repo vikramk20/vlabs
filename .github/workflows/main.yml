@@ -7,6 +7,8 @@ on:
 jobs:
   call-workflow-A:
     uses: vikramk20/deployment-workflow/.github/workflows/main.yml@main
+    permissions:
+      issues: write
     with:
       username: vikramk20
    
