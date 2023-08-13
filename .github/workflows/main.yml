@@ -10,4 +10,4 @@ jobs:
     with:
       username: vikramk20
     secrets:
-      token: ${{ secrets.TOKEN }}
+      token: ${{ github.TOKEN }}
