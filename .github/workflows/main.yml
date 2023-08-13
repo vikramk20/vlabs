@@ -9,5 +9,4 @@ jobs:
     uses: vikramk20/deployment-workflow/.github/workflows/main.yml@main
     with:
       username: vikramk20
-    secrets:
-      token: ${{ github.TOKEN }}
+   
