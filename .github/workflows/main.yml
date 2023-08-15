@@ -12,6 +12,10 @@ jobs:
       - name: Build
         run: |
           echo Hello, "$ORG"
+          if [ $ORG" == "ORG" ]
+          then
+            echo "aaa"
+          fi
         env:
           ORG: ${{ secrets.ORG_TEST }}
        
