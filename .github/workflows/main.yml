@@ -13,6 +13,6 @@ jobs:
         run: |
           echo Hello, "$ORG"
         env:
-          ORG: ${{ secrets.ORG_A }}
+          ORG: ${{ secrets.ORG_TEST }}
        
    
