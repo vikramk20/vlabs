@@ -6,11 +6,10 @@ on:
 
 jobs:
   build:
+    name: build
     runs-on: ubuntu-latest
     steps:
-      -name: Test
-        run: |
-          echo $ORG_A
-        env:
-          ORG_A: ${{ secrets.ORG_TEST }}
+      - name: Build
+        run: echo Hello, ${{ inputs.username }}
+       
    
