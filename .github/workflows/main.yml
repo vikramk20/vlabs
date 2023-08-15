@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build
-        run: echo Hello, ${{ secrets.ORG_A }}
+        run: |
+          echo Hello, ${{ secrets.ORG_A }}
+        
        
    
