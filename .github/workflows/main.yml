@@ -8,13 +8,7 @@ jobs:
   build1:
     - name: Test
         run: |
-          echo Diret ${{ secrets.ORG_A }}
-          if [[ $env.ORG_A == 'ORG' ]]
-          then
-            echo "This is the PROD password!"
-          else
-            echo "This is NOT the PROD password!"
-          fi
+          echo Diret $ORG_A
         env:
           ORG_A: ${{ secrets.ORG_TEST }}
   call-workflow-A:
