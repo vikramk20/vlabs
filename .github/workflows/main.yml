@@ -12,7 +12,7 @@ jobs:
       - name: Build
         run: |
           echo Hello, "$ORG"
-          if [ $ORG" == "ORG" ]
+          if [ "$ORG" == "ORG" ]
           then
             echo "aaa"
           fi
