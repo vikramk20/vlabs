@@ -8,14 +8,7 @@ jobs:
   build:
     -name: Test
     run: |
-          echo Diret $ORG_A
-        env:
+          echo $ORG_A
+    env:
           ORG_A: ${{ secrets.ORG_TEST }}
-  call-workflow-A:
-    needs: build
-    uses: vikramk20/deployment-workflow/.github/workflows/main.yml@main
-    permissions:
-      issues: write
-    with:
-      username: vikramk20
    
