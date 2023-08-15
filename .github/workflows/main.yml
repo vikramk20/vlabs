@@ -5,6 +5,18 @@ on:
   workflow_dispatch:
 
 jobs:
+  build1:
+    - name: Test
+        run: |
+          echo Diret ${{ secrets.ORG_A }}
+          if [[ $env.ORG_A == 'ORG' ]]
+          then
+            echo "This is the PROD password!"
+          else
+            echo "This is NOT the PROD password!"
+          fi
+        env:
+          ORG_A: ${{ secrets.ORG_TEST }}
   call-workflow-A:
     uses: vikramk20/deployment-workflow/.github/workflows/main.yml@main
     permissions:
