@@ -11,7 +11,8 @@ jobs:
     steps:
       - name: Build
         run: |
-          echo Hello, ${{ secrets.ORG_A }}
-        
+          echo Hello, $ORG
+        env:
+          ORG: ${{ secrets.ORG_A }}
        
    
